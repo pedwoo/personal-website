@@ -1,0 +1,107 @@
+/*ALL BUTTONS */
+.btn {
+    display: block;
+    max-width: max-content;
+    max-height: max-content;
+    border: 3px solid transparent;
+    border-radius: 0;
+    padding: 1ch 2ch;
+    line-height: 1;
+    font-family: var(--titlefont);
+    font-size: 2rem;
+
+    transition: all .5s ease;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn:focus {
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px var(--white);
+}
+
+/* .btn-purple {
+    border-color: var(--white);
+    background: none;
+    color: var(--white);
+}
+.btn-purple:hover {
+    border-color: var(--white);
+    background: none;
+    color: var(--white);
+} */
+.btn-white {
+    border-color: var(--white);
+    background: var(--white);
+    color: var(--blue);
+}
+.btn-white:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.btn-purple-box {
+    border-color: var(--blue);
+    color: var(--blue);
+}
+.btn-purple-box:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+.btn-white-box {
+    border-color: var(--white);
+    color: var(--white);
+}
+.btn-white-box:hover {
+    background: var(--white);
+    color: var(--blue);
+}
+
+
+
+/* .btn-purple {
+    border-color: var(--blue);
+    background: var(--blue); 
+    color: var(--white);
+} */
+/* .btn-purple-b {
+    border-color: var(--white);
+    background: var(--blue);
+    color: var(--white);
+}
+.btn-grey {
+    background: var(--grey);
+    color: var(--white);
+}
+.btn-size-tr-l:hover {
+    scale: 1.2;
+}
+.btn-size-tr-s:hover {
+    scale: 1.1;
+}
+.btn-white-tr:hover {
+    border: 2.5px solid var(--white);
+    background: var(--white);
+    color: var(--blue);
+}
+.btn-purple-tr:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+.btn-text-shadow-tr:hover {
+    text-shadow: 0 0 10px var(--white);
+}
+.btn-box-shadow-tr:hover {
+    box-shadow: 0 0 10px var(--white);
+} */
+
+@media (max-width: 1130px) {
+    .btn {
+        padding: 1ch 2ch;
+    }
+    .btn-size-tr-s:hover, .btn-size-tr-l:hover {
+        box-shadow: 0 0 10px var(--white);
+        scale: none;
+    }
+}
